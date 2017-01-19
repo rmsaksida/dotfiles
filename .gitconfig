@@ -1,0 +1,7 @@
+[user]
+	email = rm@saksida.com.br
+	name = RM Saksida
+[log]
+	decorate = true
+[push]
+	default = simple
