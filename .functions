@@ -9,3 +9,9 @@ function activate_nvm {
     export NVM_DIR="/Users/rmsaksida/.nvm"
     [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 }
+
+function activate_envs {
+    activate_rvm
+    activate_nvm
+}
+
