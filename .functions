@@ -1,17 +1,6 @@
 #!/bin/bash
 
-function activate_rvm {
-    export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-    [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+function asdfg {
+    . $HOME/.asdf/asdf.sh
+    . $HOME/.asdf/completions/asdf.bash
 }
-
-function activate_nvm {
-    export NVM_DIR="/Users/rmsaksida/.nvm"
-    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-}
-
-function activate_envs {
-    activate_rvm
-    activate_nvm
-}
-

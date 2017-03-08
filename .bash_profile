@@ -1,4 +1,6 @@
-[[ -s "$HOME/.profile" ]] && source "$HOME/.profile" # Load the default .profile
+[ -f "$HOME/.profile" ] && . $HOME/.profile # Load the default .profile
+
+[ -f "$HOME/.path" ] && . $HOME/.path
 
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
