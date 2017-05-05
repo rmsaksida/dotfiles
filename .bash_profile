@@ -1,5 +1,7 @@
 [ -f "$HOME/.profile" ] && . $HOME/.profile # Load the default .profile
 
+[ -f "$HOME/.bashrc" ] && . $HOME/.bashrc # Load the default .profile
+
 [ -f "$HOME/.path" ] && . $HOME/.path
 
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
@@ -9,5 +11,3 @@
 [ -f "$HOME/.aliases" ] && . $HOME/.aliases
 
 [ -f "$HOME/.functions" ] && . $HOME/.functions
-
-. ~/.bashrc
