@@ -5,3 +5,9 @@
 	decorate = true
 [push]
 	default = simple
+[alias]
+       l = log
+       ll = log -10 --pretty=format:'%Cred%h%Creset %s'
+       lp = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+       s = status
+
