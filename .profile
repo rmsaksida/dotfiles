@@ -4,6 +4,6 @@ export HISTCONTROL="ignorespace"
 export EDITOR="vim"
 export HISTSIZE=
 export HISTFILESIZE=
-export LANG=en
+export LANG=en_US.UTF-8
 
 
