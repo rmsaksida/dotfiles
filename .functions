@@ -4,3 +4,8 @@ function asdfg {
     . $HOME/.asdf/asdf.sh
     . $HOME/.asdf/completions/asdf.bash
 }
+
+tojpg() {
+  sips -s format jpeg "$1" --out /tmp/out.jpg
+}
+
