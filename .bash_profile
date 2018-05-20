@@ -14,7 +14,5 @@
 
 [ -f "/usr/local/etc/bash_completion.d/password-store" ] && . /usr/local/etc/bash_completion.d/password-store
 
-[ -f /Users/rmsaksida/.config/yarn/global/node_modules/electron-forge/node_modules/tabtab/.completions/electron-forge.bash ] && . /Users/rmsaksida/.config/yarn/global/node_modules/electron-forge/node_modules/tabtab/.completions/electron-forge.bash
-
 hist import &> /dev/null
 

@@ -6,6 +6,8 @@ function asdfg {
 }
 
 tojpg() {
-  sips -s format jpeg "$1" --out /tmp/out.jpg
+    for file in "$@"
+    do
+        sips -s format jpeg "$file" --out /tmp/out$RANDOM.jpg
+    done
 }
-

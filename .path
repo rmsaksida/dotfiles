@@ -4,14 +4,11 @@
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
 
-# yarn
-export PATH="$HOME/.yarn/bin:$PATH"
-export PATH="$PATH:$HOME/.asdf/installs/nodejs/default/bin"
-export PATH="$PATH:$HOME/.config/yarn/global/node_modules/.bin"
+# npm
+export PATH="$PATH:$HOME/.asdf/installs/nodejs/$(cat $HOME/.tool-versions | grep nodejs | cut -d ' ' -f 2)/.npm/bin"
 
 # gnupg
 export PATH="/usr/local/opt/gnupg@2.1/bin:$PATH"
 
 # dotfiles
 export PATH="$HOME/.dotfiles/bin:$PATH"
-
